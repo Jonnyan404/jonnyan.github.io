@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jonnyan404.github.io</id>
     <title>公子向北走</title>
-    <updated>2020-03-16T03:44:44.066Z</updated>
+    <updated>2020-03-16T03:51:47.410Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jonnyan404.github.io"/>
     <link rel="self" href="https://jonnyan404.github.io/atom.xml"/>
@@ -10,6 +10,29 @@
     <logo>https://jonnyan404.github.io/images/avatar.png</logo>
     <icon>https://jonnyan404.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 公子向北走</rights>
+    <entry>
+        <title type="html"><![CDATA[v2rayN的pac简单规则]]></title>
+        <id>https://jonnyan404.github.io/post/v2rayn-de-pac-jian-dan-gui-ze/</id>
+        <link href="https://jonnyan404.github.io/post/v2rayn-de-pac-jian-dan-gui-ze/">
+        </link>
+        <updated>2020-03-16T03:45:43.000Z</updated>
+        <content type="html"><![CDATA[<p>PAC简单规则</p>
+<pre><code>||example.com,  意思是所有 example.com域名下的网址都走代理(注意：后面需要半角逗号，即英文输入法下逗号）
+
+@@||example.com, 例外规则，意思是所有  example.com域名下的网址都不走代理
+
+|http://example.com, 起止规则， 意思是以http://example.com 开始地址都走代理
+</code></pre>
+<hr>
+<p>v2ray官网的解释（<a href="https://www.v2ray.com/chapter_02/03_routing.html">https://www.v2ray.com/chapter_02/03_routing.html</a>）：<br>
+域名解析策略，根据不同的设置使用不同的策略。</p>
+<ul>
+<li>&quot;AsIs&quot;: 只使用域名进行路由选择。默认值。</li>
+<li>&quot;IPIfNonMatch&quot;: 当域名没有匹配任何规则时，将域名解析成 IP（A 记录或 AAAA 记录）再次进行匹配；当一个域名有多个 A 记录时，会尝试匹配所有的 A 记录，直到其中一个与某个规则匹配为止；解析后的 IP 仅在路由选择时起作用，转发的数据包中依然使用原始域名；</li>
+<li>&quot;IPOnDemand&quot;: 当匹配时碰到任何基于 IP 的规则，将域名立即解析为 IP 进行匹配；</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[grafana里prometheus查询语法]]></title>
         <id>https://jonnyan404.github.io/post/grafana-li-prometheus-cha-xun-yu-fa/</id>
@@ -112,20 +135,6 @@
 <code>find /usr/sam \( -path /usr/sam/dir1 -o -path /usr/sam/file1 \) -prune -o -name &quot;*&quot; -print</code></p>
 <p><strong>参考:</strong><br>
 <a href="http://www.zsythink.net/archives/1154">http://www.zsythink.net/archives/1154</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hve notes 使用教程]]></title>
-        <id>https://jonnyan404.github.io/post/hve-notes-shi-yong-jiao-cheng/</id>
-        <link href="https://jonnyan404.github.io/post/hve-notes-shi-yong-jiao-cheng/">
-        </link>
-        <updated>2019-01-29T14:30:58.000Z</updated>
-        <summary type="html"><![CDATA[<p>摘要需要另起一行插入 <!-- more --> 才可以显示在首页摘要处.</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>摘要需要另起一行插入 <!-- more --> 才可以显示在首页摘要处.</p>
-<!-- more -->
-<h1 id="hve-notes-是什么">Hve Notes 是什么?</h1>
-<h1 id="hve-notes-怎么使用">Hve Notes 怎么使用?</h1>
 ]]></content>
     </entry>
     <entry>

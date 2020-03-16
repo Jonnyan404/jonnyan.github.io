@@ -3,7 +3,7 @@
         <head>
         <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
         <meta charset="utf-8">
-        <title>Hello Gridea | 公子向北走</title>
+        <title>v2rayN的pac简单规则 | 公子向北走</title>
         <link rel="stylesheet" href="https://jonnyan404.github.io/styles/main.css">
         <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
         <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
@@ -56,38 +56,32 @@
                 <div class="mdui-row">
                         <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
                                 <article class="mdui-p-a-2 post animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="post-title  mdui-m-b-1">Hello Gridea</div>
-                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2018-12-12 00:00:00">2018-12-12 / 2 min read</div>
-                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+                                    <div class="post-title  mdui-m-b-1">v2rayN的pac简单规则</div>
+                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2020-03-16 11:45:43">2020-03-16 / 2 min read</div>
+                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><p>PAC简单规则</p>
+<pre><code>||example.com,  意思是所有 example.com域名下的网址都走代理(注意：后面需要半角逗号，即英文输入法下逗号）
+
+@@||example.com, 例外规则，意思是所有  example.com域名下的网址都不走代理
+
+|http://example.com, 起止规则， 意思是以http://example.com 开始地址都走代理
+</code></pre>
+<hr>
+<p>v2ray官网的解释（<a href="https://www.v2ray.com/chapter_02/03_routing.html">https://www.v2ray.com/chapter_02/03_routing.html</a>）：<br>
+域名解析策略，根据不同的设置使用不同的策略。</p>
+<ul>
+<li>&quot;AsIs&quot;: 只使用域名进行路由选择。默认值。</li>
+<li>&quot;IPIfNonMatch&quot;: 当域名没有匹配任何规则时，将域名解析成 IP（A 记录或 AAAA 记录）再次进行匹配；当一个域名有多个 A 记录时，会尝试匹配所有的 A 记录，直到其中一个与某个规则匹配为止；解析后的 IP 仅在路由选择时起作用，转发的数据包中依然使用原始域名；</li>
+<li>&quot;IPOnDemand&quot;: 当匹配时碰到任何基于 IP 的规则，将域名立即解析为 IP 进行匹配；</li>
+</ul>
 </div>
                                     <div class="mdui-divider mdui-m-b-2"></div>
                                     <div class="mdui-row-xs-2 post-fenye">
                                        
-                                        <div class="mdui-col"> <div class="mdui-text-left"><a href="https://jonnyan404.github.io/post/linux-xia-find-pai-chu-duo-ge-mu-lu-fang-fa/">linux 下find排除多个目录方法</a></div></div>
+                                        <div class="mdui-col"> </div>
                                         
 
                                         
-                                        <div class="mdui-col"></div>
+                                        <div class="mdui-col"><div class="mdui-text-right "><a href="https://jonnyan404.github.io/post/grafana-li-prometheus-cha-xun-yu-fa/">grafana里prometheus查询语法</a></div> </div>
                                        
                                       </div>
                                    
