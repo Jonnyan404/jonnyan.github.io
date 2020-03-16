@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jonnyan404.github.io</id>
     <title>公子向北走</title>
-    <updated>2020-03-16T03:51:47.410Z</updated>
+    <updated>2020-03-16T04:01:01.313Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jonnyan404.github.io"/>
     <link rel="self" href="https://jonnyan404.github.io/atom.xml"/>
@@ -16,6 +16,15 @@
         <link href="https://jonnyan404.github.io/post/v2rayn-de-pac-jian-dan-gui-ze/">
         </link>
         <updated>2020-03-16T03:45:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>PAC简单规则</p>
+<pre><code>||example.com,  意思是所有 example.com域名下的网址都走代理(注意：后面需要半角逗号，即英文输入法下逗号）
+
+@@||example.com, 例外规则，意思是所有  example.com域名下的网址都不走代理
+
+|http://example.com, 起止规则， 意思是以http://example.com 开始地址都走代理
+</code></pre>
+<hr>
+]]></summary>
         <content type="html"><![CDATA[<p>PAC简单规则</p>
 <pre><code>||example.com,  意思是所有 example.com域名下的网址都走代理(注意：后面需要半角逗号，即英文输入法下逗号）
 
@@ -24,6 +33,7 @@
 |http://example.com, 起止规则， 意思是以http://example.com 开始地址都走代理
 </code></pre>
 <hr>
+<!-- more -->
 <p>v2ray官网的解释（<a href="https://www.v2ray.com/chapter_02/03_routing.html">https://www.v2ray.com/chapter_02/03_routing.html</a>）：<br>
 域名解析策略，根据不同的设置使用不同的策略。</p>
 <ul>
